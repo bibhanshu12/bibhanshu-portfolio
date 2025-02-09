@@ -4,14 +4,14 @@ const Projects = () => {
     const projects = [
       {
         title: "Project 1: Jiocinema clone",
-        image:"public/jiocinema.jpg",
+        image:"/jiocinema.jpg",
         description: "A full-featured front-end  clone with responsive design and video playback capabilities from youtube.",
         technologies: ["React", "Tailwind CSS"],
         link: "#"
       },
       {
         title: "Project 2: Weather App",
-        image:"public/weatherApp.png",
+        image:"/weatherApp.png",
         description: "Android Weather App 🌦️. A sleek app fetching real-time weather data via API, providing a 5-day forecast with a smooth UI. ",
         technologies: ["Java", "Open Weather"],
         link: "#"
