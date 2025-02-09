@@ -1,23 +1,24 @@
 import React from "react";
+import images from "../assets/assets";
 const Projects = () => {
     // Sample project data - replace with your actual projects
     const projects = [
       {
-        title: "Project 1: Jiocinema clone",
-        image:"/jiocinema.jpg",
+        title: "Jiocinema clone",
+        image:images.project3,
         description: "A full-featured front-end  clone with responsive design and video playback capabilities from youtube.",
         technologies: ["React", "Tailwind CSS"],
         link: "#"
       },
       {
-        title: "Project 2: Weather App",
-        image:"/weatherApp.png",
+        title: "Weather App",
+        image:images.project2,
         description: "Android Weather App 🌦️. A sleek app fetching real-time weather data via API, providing a 5-day forecast with a smooth UI. ",
         technologies: ["Java", "Open Weather"],
         link: "#"
       },
       {
-        title: "Project 3: Youtube Backend",
+        title: "Youtube Backend",
         image:"",
         description: "Description of project 3. Add your project details here to showcase your work and skills.",
         technologies: ["TypeScript", "Next.js"],
