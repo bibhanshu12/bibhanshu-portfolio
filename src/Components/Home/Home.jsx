@@ -83,7 +83,7 @@ const Home = () => {
         <div className="mt-10 md:mt-0 relative">
           <div className="rounded-full h-60 w-60 md:h-96 md:w-80 overflow-hidden border-4 border-blue-400 shadow-lg shadow-blue-500/50">
             <img 
-              src="src/assets/bibhanshu.jpg" 
+              src="assets/bibhanshu.jpg" 
               alt="profile" 
               className="rounded-full w-full h-full object-cover transform hover:scale-110 transition-transform duration-300"
             />

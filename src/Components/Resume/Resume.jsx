@@ -2,7 +2,7 @@ import React from 'react';
 
 function Resume() {
   const handleDownload = () => {
-    const resumeUrl = '/public/FAANGPath_Simple_Template__1_.pdf'; // Ensure resume.pdf is in the public folder
+    const resumeUrl = '/assets/resume.pdf'; // Ensure resume.pdf is in the public folder
     const link = document.createElement('a');
     link.href = resumeUrl;
     link.download = 'Resume.pdf';
