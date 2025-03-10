@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
 import images from '../../assets/assets';
-
+import { useState,useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const [name] = useState('Bibhanshu Lal Karn');
@@ -65,12 +65,12 @@ const Home = () => {
             {roles[currentRoleIndex]}
           </div>
           <div className="flex gap-4 mt-6">
-            <a 
-              href="contact" 
+            <Link to='/contact'
+              
               className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full transition-colors duration-300"
             >
               Contact 
-            </a>
+            </Link>
             <a 
               href="#projects" 
               className="border border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white px-6 py-2 rounded-full transition-colors duration-300"
