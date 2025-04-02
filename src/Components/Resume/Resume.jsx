@@ -1,7 +1,7 @@
 
 function Resume() {
   const handleDownload = () => {
-    const resumeUrl = "/resume.pdf"; // Ensure resume.pdf is in the public folder
+    const resumeUrl = "/Resume.pdf"; // Ensure resume.pdf is in the public folder
     const link = document.createElement('a');
     link.href = resumeUrl;
     link.download = 'Resume.pdf';
