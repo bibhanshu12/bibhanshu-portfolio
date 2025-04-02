@@ -18,7 +18,7 @@ const Projects = () => {
             description: "A full-featured front-end clone with responsive design and video playback capabilities from YouTube.",
             technologies: ["React", "Styled Components", "Firebase"],
             link: "https://disney.bibhanshu.tech",
-            gitLink:""
+           
         },
         {
             title: "Weather App",

@@ -95,7 +95,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Quick Stats with Animation */}
+      {/* Quick Stats  */}
       <section className="px-6 md:px-36 py-10 mt-32  bg-blue-500/10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           <div className="text-center p-6 bg-blue-500/10 rounded-lg">
