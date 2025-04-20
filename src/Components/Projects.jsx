@@ -28,23 +28,23 @@ const Projects = () => {
             link: "#"
         },
         {
-            title: "Youtube Backend",
+            title: "E-commerce Backend",
             image: "",
-            description: "A backend system for YouTube-like functionality, including video processing, user authentication, and scalable API endpoints.",
-            technologies: ["TypeScript", "Next.js"],
+            description: "A backend system for Advance E-Commerce website featuring with different Schemas, user authentication, and scalable API endpoints.",
+            technologies: ["TypeScript", "Express.js","React","Postgresql"],
             link: "#"
         },
         {
-            title: "Project 4",
-            image: "",
-            description: "A Django-based web application designed to manage and process large datasets efficiently with a robust API.",
-            technologies: ["Python", "Django"],
-            link: "#"
+            title: "Threads Clone",
+            image:images.porject4,
+            description: "A React based Full Stack web application designed to manage and process large datasets efficiently with a redux APIs.",
+            technologies: ["Express.js","React", "Javascript","Mongoose"],
+            link: "https://threads.bibhanshu.tech"
         },
         {
             title: "Project 5",
             image: "",
-            description: "A Java and MySQL-based project for handling user data securely and providing a reliable backend for applications.",
+            description:  "Coming soon.",
             technologies: ["Java", "MySQL"],
             link: "#"
         },
@@ -55,7 +55,7 @@ const Projects = () => {
             <div className="max-w-7xl mx-auto">
                 <h2 className="text-3xl font-bold text-center mb-12 text-white">My Projects</h2>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {projects.map((project, index) => {
                         const words = project.description.split(" ");
                         const shortDescription = words.slice(0, 8).join(" ") + (words.length > 8 ? "..." : "");
