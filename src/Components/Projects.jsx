@@ -18,6 +18,7 @@ const Projects = () => {
             description: "A full-featured front-end clone with responsive design and video playback capabilities from YouTube.",
             technologies: ["React", "Styled Components", "Firebase"],
             link: "https://disney.bibhanshu.tech",
+            gitLink:"https://github.com/bibhanshu12/Disney-"
            
         },
         {
@@ -25,28 +26,34 @@ const Projects = () => {
             image: images.project2,
             description: "Android Weather App 🌦️. A sleek app fetching real-time weather data via API, providing a 5-day forecast with a smooth UI.",
             technologies: ["Java", "Open Weather"],
-            link: "#"
-        },
-        {
-            title: "E-commerce Backend",
-            image: "",
-            description: "A backend system for Advance E-Commerce website featuring with different Schemas, user authentication, and scalable API endpoints.",
-            technologies: ["TypeScript", "Express.js","React","Postgresql"],
-            link: "#"
-        },
+            gitLink: "https://github.com/bibhanshu12/Weather-App"
+        }
+        // ,
+        
+        // {
+        //     title: "E-commerce Backend",
+        //     image: "",
+        //     description: "A backend system for Advance E-Commerce website featuring with different Schemas, user authentication, and scalable API endpoints.",
+        //     technologies: ["TypeScript", "Express.js","React","Postgresql"],
+        //     gitLink: "https://github.com/bibhanshu12/theEaringBar_Backend",
+        
+        // }
+        ,
         {
             title: "Threads Clone",
             image:images.porject4,
             description: "A React based Full Stack web application designed to manage and process large datasets efficiently with a redux APIs.",
             technologies: ["Express.js","React", "Javascript","Mongoose"],
-            link: "https://threads.bibhanshu.tech"
+            link: "https://threads.bibhanshu.tech",
+            gitLink:"https://github.com/bibhanshu12/Threads-ClientSide"
         },
         {
-            title: "Project 5",
-            image: "",
-            description:  "Coming soon.",
-            technologies: ["Java", "MySQL"],
-            link: "#"
+            title: "The EarringBar Online E-Commerce",
+            image: images.project5,
+            description:  "Full-Stack online E-commerce website for shopping Earrings,Braclets,Rings,Necklesses and Many more..",
+            technologies: ["React", "Tailwind-CSS","NodeJS","Prisma","PostgreSQL"],
+            link: "https://www.theearingbars.shop/",
+            gitLink:"https://github.com/bibhanshu12/TheEaringBarFrontend"
         },
     ];
 
@@ -106,16 +113,29 @@ const Projects = () => {
                                 </div>
 
                                 {/* Card Footer */}
-                                <div className="p-2 border-gray-200">
-                                    <a 
-                                        href={project.link}
-                                        className="p-2 text-white bg-[#101010] hover:bg-[#232323] font-medium inline-flex items-center border border-[#232424] rounded-lg"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        Live Demo 
-                                    </a>
+                                <div className="p-2 flex justify-between border-gray-200">
+                                    {project.gitLink && (
+                                        <a 
+                                            href={project.gitLink}
+                                            className="p-2 text-white bg-[#101010] hover:bg-[#232323] font-medium inline-flex items-center border border-[#232424] rounded-lg"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            View 
+                                        </a>
+                                    )}
+                                    {project.link && project.link !== "#" && (
+                                        <a 
+                                            href={project.link}
+                                            className="p-2 text-white bg-[#101010] hover:bg-[#232323] font-medium inline-flex items-center border border-[#232424] rounded-lg"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            Live Demo 
+                                        </a>
+                                    )}
                                 </div>
+                                
                             </div>
                         );
                     })}
