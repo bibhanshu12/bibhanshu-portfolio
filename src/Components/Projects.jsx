@@ -12,6 +12,23 @@ const Projects = () => {
     };
 
     const projects = [
+         {
+            title: "The EarringBar Online E-Commerce",
+            image: images.project5,
+            description:  "Full-Stack online E-commerce website for shopping Earrings,Braclets,Rings,Necklesses and Many more..",
+            technologies: ["React", "Tailwind-CSS","NodeJS","Prisma","PostgreSQL"],
+            link: "https://www.theearingbars.shop/",
+            gitLink:"https://github.com/bibhanshu12/TheEaringBarFrontend"
+        },
+          {
+            title: "Threads Clone",
+            image:images.porject4,
+            description: "A React based Full Stack web application designed to manage and process large datasets efficiently with a redux APIs.",
+            technologies: ["Express.js","React", "Javascript","Mongoose"],
+            link: "https://threads.bibhanshu.tech",
+            gitLink:"https://github.com/bibhanshu12/Threads-ClientSide"
+        },
+       
         {
             title: "Disney +",
             image: images.project3,
@@ -39,22 +56,7 @@ const Projects = () => {
         
         // }
         ,
-        {
-            title: "Threads Clone",
-            image:images.porject4,
-            description: "A React based Full Stack web application designed to manage and process large datasets efficiently with a redux APIs.",
-            technologies: ["Express.js","React", "Javascript","Mongoose"],
-            link: "https://threads.bibhanshu.tech",
-            gitLink:"https://github.com/bibhanshu12/Threads-ClientSide"
-        },
-        {
-            title: "The EarringBar Online E-Commerce",
-            image: images.project5,
-            description:  "Full-Stack online E-commerce website for shopping Earrings,Braclets,Rings,Necklesses and Many more..",
-            technologies: ["React", "Tailwind-CSS","NodeJS","Prisma","PostgreSQL"],
-            link: "https://www.theearingbars.shop/",
-            gitLink:"https://github.com/bibhanshu12/TheEaringBarFrontend"
-        },
+      
     ];
 
     return (
