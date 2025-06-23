@@ -58,7 +58,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className="flex flex-col md:flex-row justify-between items-center px-6 md:px-36 py-10 md:py-20">
         <div className="flex flex-col items-start space-y-4 md:w-1/2">
-          <h1 className="text-white text-4xl md:text-5xl font-bold">
+          <h1 className="text-white mt-10 md:mt-0 text-4xl md:text-5xl font-bold">
             Hi! I'm <span className="text-blue-400">{name}</span>
           </h1>
           <div className="text-blue-300 text-2xl md:text-3xl h-12">

@@ -102,15 +102,15 @@ export default function Aboutus() {
           <div className="pt-6">
             <h3 className="text-2xl font-semibold text-blue-300 mb-4">Core Technologies</h3>
             <div className="flex flex-wrap gap-3">
-              <span className="px-4 py-2 bg- rounded-full text-blue-300">React.js</span>
-              <span className="px-4 py-2 bg-blue-500/20 rounded-full text-blue-300">Node.js</span>
-              <span className="px-4 py-2 bg-blue-500/20 rounded-full text-blue-300">Android</span>
-              <span className="px-4 py-2 bg-blue-500/20 rounded-full text-blue-300">AWS</span>
-              <span className="px-4 py-2 bg-blue-500/20 rounded-full text-blue-300">MongoDB</span>
-              <span className="px-4 py-2 bg-blue-500/20 rounded-full text-blue-300">Express.js</span>
-              <span className="px-4 py-2 bg-blue-500/20 rounded-full text-blue-300">Tailwind CSS</span>
-              <span className="px-4 py-2 bg-blue-500/20 rounded-full text-blue-300">Git</span>
-              <span className="px-4 py-2 bg-blue-500/20 rounded-full text-blue-300">Docker</span>
+              <span className="px-4 py-2 bg-[#232323] rounded-full text-blue-300">React.js</span>
+              <span className="px-4 py-2 bg-[#232323]  rounded-full text-blue-300">Node.js</span>
+              <span className="px-4 py-2 bg-[#232323]  rounded-full text-blue-300">Android</span>
+              <span className="px-4 py-2 bg-[#232323]  rounded-full text-blue-300">AWS</span>
+              <span className="px-4 py-2 bg-[#232323]  rounded-full text-blue-300">MongoDB</span>
+              <span className="px-4 py-2 bg-[#232323]  rounded-full text-blue-300">Express.js</span>
+              <span className="px-4 py-2 bg-[#232323]  rounded-full text-blue-300">Tailwind CSS</span>
+              <span className="px-4 py-2 bg-[#232323] rounded-full text-blue-300">Git</span>
+              <span className="px-4 py-2 bg-[#232323]  rounded-full text-blue-300">Docker</span>
             </div>
           </div>
         </div>

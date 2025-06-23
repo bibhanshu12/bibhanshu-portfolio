@@ -178,3 +178,20 @@
 /*
 -- End BackGround Animation 
 */
+.navbar-flash {
+  position: relative;
+  overflow: visible;
+}
+.navbar-flash::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 30%;
+  width: 40%;
+  height: 8px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.7) 50%, rgba(255,255,255,0.15) 100%);
+  filter: blur(2px);
+  pointer-events: none;
+  z-index: 10;
+}
