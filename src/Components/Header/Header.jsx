@@ -23,14 +23,14 @@ const Header = () => {
     <header>
       <nav
         className={
-          "fixed top-0 left-0 right-0 z-20 px-4 transition-all duration-300 " +
+          "fixed top-0 z-20 transition-all duration-300 header-responsive " +
           (isScrolled
-            ? "max-w-4xl mx-auto bg-background/50 rounded-2xl border border-white backdrop-blur-lg"
-            : "w-full border-b border-white")
+            ? "bg-background/50 rounded-2xl border border-white backdrop-blur-lg"
+            : "border-b border-white")
         }
       >
-        <div className="border-gray-200 px-4 lg:px-6 py-2.5">
-          <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+        <div className="px-4 lg:px-6 py-2.5">
+          <div className="flex flex-wrap justify-between items-center">
             {/* Logo/Portfolio - Always visible */}
             <Link to="/" className="flex items-center">
               <h1 className="font-bold flex justify-center items-center text-white text-3xl">

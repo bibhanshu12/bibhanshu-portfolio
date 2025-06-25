@@ -17,10 +17,11 @@ function App() {
           <li></li>
           <li></li>
           <li></li>
+       
         </ul>
       </div>
       <div className="content-wrapper">
-        <Header />
+        {/* <Header /> */}
         <Outlet />
       </div>
     </>

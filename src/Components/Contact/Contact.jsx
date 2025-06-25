@@ -38,9 +38,9 @@ Message: ${formData.message}
   return (
     <div
       id="contact"
-      className="min-h-screen relative flex items-top justify-center bg-slate-700 sm:items-center sm:pt-0"
+      className="min-h-screen relative flex items-top justify-center bg-slate-700 sm:items-center pt-20"
     >
-      <div className="max-w-6xl mx-auto sm:px-6 lg:px-8 py-12">
+              <div className="max-w-6xl mx-auto pl-4 pr-4 py-12">
         <div className="overflow-hidden">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Contact Information */}

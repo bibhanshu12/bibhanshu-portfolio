@@ -1,10 +1,8 @@
-import React from 'react';
-
 export default function Aboutus() {
   return (
-    <div id='about' className="min-h-screen py-16 ">
+    <div id='about' className="min-h-screen py-16 pt-20">
       {/* Main About Section */}
-      <section className="px-6 md:px-36 py-10 md:py-20">
+      <section className="pl-4 pr-4 py-10 md:py-20">
         <div className="max-w-4xl mx-auto text-white space-y-8">
           <h2 className="text-4xl font-bold text-blue-400 mb-8">About Me</h2>
           
@@ -57,7 +55,7 @@ export default function Aboutus() {
             <p className="text-lg leading-relaxed">
               My technical journey has equipped me with a diverse skill set in modern web and mobile development:
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
               <div className="space-y-2">
                 <h4 className="font-semibold text-blue-200">Frontend</h4>
                 <ul className="space-y-1 text-gray-300">

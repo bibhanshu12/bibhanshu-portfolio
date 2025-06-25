@@ -1,12 +1,28 @@
 import images from '../../assets/assets';
 import { useState,useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { FaLinkedin } from "react-icons/fa";
+import { IoCall } from "react-icons/io5";
+import { MdOutlineEmail } from "react-icons/md";
+import { FaGithub } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaFileInvoice } from "react-icons/fa6";
+import { CiGlobe } from "react-icons/ci";
 
 const Home = () => {
   const [name] = useState('Bibhanshu Lal Karn');
   const [roles] = useState(['Full Stack Developer', 'React Developer', 'Backend Developer', 'Android Developer']);
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
   
+
+  const icons = [
+    { Component: MdOutlineEmail, label: 'Email', href: '#projects', external: false },
+    { Component: IoCall, label: 'Call', href: 'tel:+918431615618', external: false },
+    { Component: FaGithub, label: 'GitHub', href: 'https://github.com/yourusername', external: true },
+    { Component: FaLinkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/bibhanshu-karn-118640253/', external: true },
+    { Component: FaFileInvoice, label: 'Resume', href: '/resume.pdf', external: false },
+  ];
+
   // Stats values
   const finalStats = {
     projects: 4,
@@ -54,49 +70,82 @@ const Home = () => {
   return (
     <>
    
-    <div id='home' className="min-h-screen flex flex-col">
+    <div id='home' className="min-h-screen flex flex-col ">
       {/* Hero Section */}
-      <section className="flex flex-col md:flex-row justify-between items-center px-6 md:px-36 py-10 md:py-20">
-        <div className="flex flex-col items-start space-y-4 md:w-1/2">
-          <h1 className="text-white mt-10 md:mt-0 text-4xl md:text-5xl font-bold">
-            Hi! I'm <span className="text-blue-400">{name}</span>
+      <section className="hero-section flex flex-col lg:flex-row justify-between items-center pl-4 pr-4 py-10 lg:py-20">
+        <div className="hero-text flex flex-col items-start space-y-4 lg:w-1/2 lg:pr-8">
+          <h1 className="text-white mt-10 lg:mt-0 text-2xl md:text-4xl lg:text-4xl font-bold text-left">
+            {name}
           </h1>
-          <div className="text-blue-300 text-2xl md:text-3xl h-12">
-            {roles[currentRoleIndex]}
+          <div className="text-blue-300  h-auto text-xl md:text-2xl lg:text-1xltext-left">
+          A developer by passion, a student by choice, an enthusiast by nature.
           </div>
-          <div className="flex gap-4 mt-6">
-            <Link to='/contact'
-              
-              className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full transition-colors duration-300"
+          <div className="text-blue-400 flex items-center h-auto text-xl md:text-2xl lg:text-xl text-left gap-2">
+  <CiGlobe size={20} />
+  <span>Bengaluru, India</span>
+</div>
+
+
+          <div className="flex gap-2  mt-6 justify-center">
+      {icons.map(({ Component, label, href, external }) => (
+        <div key={label} className="relative group">
+          {external ? (
+            <a
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={label}
+              className="flex items-center justify-center w-10 h-10 border border-blue-400 text-white hover:bg-blue-400 hover:border-transparent p-2 rounded-md shadow-md transition-all duration-300"
             >
-              Contact 
-            </Link>
-            <a 
-              href="#projects" 
-              className="border border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white px-6 py-2 rounded-full transition-colors duration-300"
-            >
-              View Work
+              <Component size={20} />
             </a>
+          ) : href.startsWith('tel') ? (
+            <a
+              href={href}
+              aria-label={label}
+              className="flex items-center justify-center w-10 h-10 border border-blue-400 text-white hover:bg-blue-400 hover:border-transparent p-2 rounded-md shadow-md transition-all duration-300"
+            >
+              <Component size={20} />
+            </a>
+          ) : (
+            <Link
+              to={href}
+              aria-label={label}
+              className="flex items-center justify-center w-10 h-10 border border-blue-400 text-white hover:bg-blue-400 hover:border-transparent p-2 rounded-md shadow-md transition-all duration-300"
+            >
+              <Component size={20} />
+            </Link>
+          )}
+
+          <div className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transform group-hover:-translate-y-1 transition-all duration-200 pointer-events-none">
+            <span className="inline-block bg-black bg-opacity-75 text-white text-xs font-medium py-1 px-2 rounded-md whitespace-nowrap shadow-lg">
+              {label}
+            </span>
+            <div className="w-2 h-2 bg-black bg-opacity-75 rotate-45 transform origin-top-left mx-auto mt-[-4px]" />
           </div>
+        </div>
+      ))}
+    </div>
         </div>
 
         {/* Profile Image */}
-        <div className="mt-10 md:mt-0 relative">
-          <div className="rounded-full h-60 w-60 md:h-96 md:w-80 overflow-hidden border-4 border-blue-400 shadow-lg shadow-blue-500/50">
+        <div className="hero-image mt-10 lg:mt-0 relative flex justify-center lg:justify-end">
+          <div className="rounded-full h-48 w-48 sm:h-60 sm:w-60 md:h-64 md:w-64 lg:h-72 lg:w-72 xl:h-80 xl:w-80 overflow-hidden border-4 border-blue-400 shadow-lg shadow-blue-500/50">
             <img 
               src={images.profile}
               alt="profile" 
               className="rounded-full w-full h-full object-cover transform hover:scale-110 transition-transform duration-300"
             />
+
           </div>
-          <div className="absolute -bottom-4 -right-4 bg-blue-500 text-white px-4 py-2 rounded-full text-sm">
-            Available for work
+          <div className="absolute -bottom-4 -right-4 bg-blue-500 text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm">
+            {roles[currentRoleIndex]}
           </div>
         </div>
       </section>
 
       {/* Quick Stats  */}
-      <section className="px-6 md:px-36 py-10 mt-32  bg-blue-500/10">
+      <section className="pl-4 pr-4 py-10 mt-32 bg-blue-500/10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           <div className="text-center p-6 bg-blue-500/10 rounded-lg">
             <div className="text-3xl font-bold text-blue-400">{stats.projects}+</div>
