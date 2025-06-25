@@ -7,6 +7,7 @@ import Resume from './Components/Resume/Resume.jsx';
 import Aboutus from './Components/About/About.jsx';
 import Contact from './Components/Contact/Contact.jsx';
 import Projects from './Components/Projects';
+import Education from './Components/Education.jsx';
 import './index.css';
 
 const router = createBrowserRouter([
@@ -20,7 +21,9 @@ const router = createBrowserRouter([
           <>
             <Home />
             <Aboutus />
+            <Education />
             <Projects />
+            
           </>
         )
       },

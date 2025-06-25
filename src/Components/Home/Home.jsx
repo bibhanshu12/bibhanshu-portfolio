@@ -196,7 +196,7 @@ const Home = () => {
     </div>
 
       {/* Quick Stats  */}
-      <section className="pl-4 pr-4 py-10 mt-32 bg-blue-500/10">
+      <section className="pl-4 pr-4 py-10 mt-10 bg-blue-500/10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           <div className="text-center p-6 bg-blue-500/10 rounded-lg">
             <div className="text-3xl font-bold text-blue-400">{stats.projects}+</div>
