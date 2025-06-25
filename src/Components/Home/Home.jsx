@@ -20,7 +20,7 @@ const Home = () => {
     { Component: IoCall, label: 'Call', href: 'tel:+918431615618', external: false },
     { Component: FaGithub, label: 'GitHub', href: 'https://github.com/yourusername', external: true },
     { Component: FaLinkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/bibhanshu-karn-118640253/', external: true },
-    { Component: FaFileInvoice, label: 'Resume', href: '/resume.pdf', external: false },
+    { Component: FaFileInvoice, label: 'Resume', href: '/Resume.pdf', external: false },
   ];
 
   // Stats values
@@ -190,10 +190,11 @@ const Home = () => {
       </section>
 
      
-      <div className="my-6 bg-blue-900/70 m-1 rounded-lg p-4">
-      <h2 className="text-2xl text-white font-semibold mb-4">GitHub Contributions</h2>
+      <div className="bg-blue-900/50 rounded-lg m-2 text-white p-8">
+      <h2 className="text-2xl font-bold mb-4">GitHub Contributions</h2>
       <GitHubCalendar username="bibhanshu12" />
     </div>
+
       {/* Quick Stats  */}
       <section className="pl-4 pr-4 py-10 mt-32 bg-blue-500/10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">

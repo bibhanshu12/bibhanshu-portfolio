@@ -250,3 +250,13 @@ body{
   pointer-events: none;
   z-index: 10;
 }
+
+.react-github-calendar text {
+	fill: white !important;
+  }
+  
+  /* Also ensure tooltip text is white if using tooltips */
+  .react-github-calendar .react-tooltip {
+	color: white !important;
+	background-color: #1f2937 !important; /* optional: darker tooltip */
+  }
