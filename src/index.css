@@ -52,7 +52,8 @@ body{
 */
 .area {
 	/* background: rgb(1, 12, 29); */
-	background: #121212;
+	/* background: #121212; */
+		background:black;
 	background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
 	width: 50%;
 	max-width: 1200px;
