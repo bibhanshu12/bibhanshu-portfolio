@@ -15,10 +15,19 @@ const Home = () => {
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
   
 
+  const handleDownload = () => {
+    const resumeUrl = "/Resume.pdf"; // Ensure resume.pdf is in the public folder
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.download = 'Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   const icons = [
-    { Component: MdOutlineEmail, label: 'Email', href: '#projects', external: false },
+    { Component: MdOutlineEmail, label: 'Email', href: 'mailto:bibhanshu.karn@gmail.com', external: false },
     { Component: IoCall, label: 'Call', href: 'tel:+918431615618', external: false },
-    { Component: FaGithub, label: 'GitHub', href: 'https://github.com/yourusername', external: true },
+    { Component: FaGithub, label: 'GitHub', href: 'https://github.com/bibhanshu12', external: true },
     { Component: FaLinkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/bibhanshu-karn-118640253/', external: true },
     { Component: FaFileInvoice, label: 'Resume', href: '/Resume.pdf', external: false },
   ];

@@ -26,7 +26,9 @@ const Education=()=>{
           <p className="bg-blue-900/50 rounded-lg">2022 - 2026</p>
         </div>
       </div>
+      
     </div>
+    
         </>
     )
 }
