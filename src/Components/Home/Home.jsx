@@ -5,7 +5,6 @@ import { FaLinkedin } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 import { FaFileInvoice } from "react-icons/fa6";
 import { CiGlobe } from "react-icons/ci";
 import GitHubCalendar from 'react-github-calendar';
@@ -15,15 +14,6 @@ const Home = () => {
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
   
 
-  const handleDownload = () => {
-    const resumeUrl = "/Resume.pdf"; // Ensure resume.pdf is in the public folder
-    const link = document.createElement('a');
-    link.href = resumeUrl;
-    link.download = 'Resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
   const icons = [
     { Component: MdOutlineEmail, label: 'Email', href: 'mailto:bibhanshu.karn@gmail.com', external: false },
     { Component: IoCall, label: 'Call', href: 'tel:+918431615618', external: false },
@@ -56,14 +46,14 @@ const Home = () => {
     return () => clearInterval(interval);
   }, [roles.length]);
 
-  // Number counting animation
+
   useEffect(() => {
-    const incrementSpeed = 30; // Adjust for speed control
+    const incrementSpeed = 30; 
 
     Object.keys(finalStats).forEach((key) => {
       let start = 0;
       const end = finalStats[key];
-      const increment = Math.ceil(end / 50); // Adjust for smoother transitions
+      const increment = Math.ceil(end / 50); 
 
       const timer = setInterval(() => {
         start += increment;
@@ -86,7 +76,7 @@ const Home = () => {
         <div className="hero-image mt-10 lg:mt-0 relative flex justify-center lg:justify-end order-1 lg:order-2">
           <div className="rounded-full h-48 w-48 sm:h-60 sm:w-60 md:h-64 md:w-64 lg:h-72 lg:w-72 xl:h-80 xl:w-80 overflow-hidden border-4 border-blue-400 shadow-lg shadow-blue-500/50">
             <img 
-              src={images.profile}
+              src={images.profile1}
               alt="profile" 
               className="rounded-full w-full h-full object-cover transform hover:scale-110 transition-transform duration-300"
             />
@@ -114,6 +104,16 @@ const Home = () => {
               ) : href.startsWith('tel') ? (
                 <a
                   href={href}
+                  aria-label={label}
+                  className="flex items-center justify-center w-10 h-10 border border-blue-400 text-white hover:bg-blue-400 hover:border-transparent p-2 rounded-md shadow-md transition-all duration-300"
+                >
+                  <Component size={20} />
+                </a>
+              ) : href.endsWith('.pdf') ? ( 
+                <a
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={label}
                   className="flex items-center justify-center w-10 h-10 border border-blue-400 text-white hover:bg-blue-400 hover:border-transparent p-2 rounded-md shadow-md transition-all duration-300"
                 >
@@ -171,6 +171,16 @@ const Home = () => {
                 ) : href.startsWith('tel') ? (
                   <a
                     href={href}
+                    aria-label={label}
+                    className="flex items-center justify-center w-10 h-10 border border-blue-400 text-white hover:bg-blue-400 hover:border-transparent p-2 rounded-md shadow-md transition-all duration-300"
+                  >
+                    <Component size={20} />
+                  </a>
+                ) : href.endsWith('.pdf') ? ( 
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label={label}
                     className="flex items-center justify-center w-10 h-10 border border-blue-400 text-white hover:bg-blue-400 hover:border-transparent p-2 rounded-md shadow-md transition-all duration-300"
                   >
