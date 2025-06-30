@@ -22,8 +22,10 @@ const Education=()=>{
         </div>
 
         {/* Right Side: Dates */}
-        <div className="md:w-1/4 text-right text-gray-400 mt-4 md:mt-0">
-          <p className="bg-blue-900/50 rounded-lg">2022 - 2026</p>
+        <div className="md:w-1/4 text-right text-gray-400 mt-4 md:mt-0 flex md:justify-end">
+          <p className="bg-blue-900/50 rounded-lg inline-block px-3 py-1">
+            2022 - 2026
+          </p>
         </div>
       </div>
       
