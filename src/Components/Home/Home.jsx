@@ -8,6 +8,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaFileInvoice } from "react-icons/fa6";
 import { CiGlobe } from "react-icons/ci";
 import GitHubCalendar from 'react-github-calendar';
+import PageWrapper from '../PageWrapper';
 const Home = () => {
   const [name] = useState('Bibhanshu Lal Karn');
   const [roles] = useState(['Full Stack Developer', 'React Developer', 'Backend Developer', 'Android Developer']);
@@ -68,6 +69,7 @@ const Home = () => {
 
   return (
     <>
+ 
     <div id='home' className="min-h-screen flex flex-col">
       {/* Hero Section */}
       <section className="hero-section flex flex-col lg:flex-row justify-between items-center pl-4 pr-4 py-10 lg:py-20">
@@ -208,7 +210,7 @@ const Home = () => {
         </div>
       </section>
 
-     
+        <PageWrapper>
       <div className="bg-blue-900/50 rounded-lg m-2 text-white p-8">
       <h2 className="text-2xl font-bold mb-4">GitHub Contributions</h2>
       <GitHubCalendar username="bibhanshu12" />
@@ -235,7 +237,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+      </PageWrapper>
     </div>
+    
     </>
   );
 };

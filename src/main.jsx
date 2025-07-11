@@ -9,6 +9,7 @@ import Contact from './Components/Contact/Contact.jsx';
 import Projects from './Components/Projects';
 import Education from './Components/Education.jsx';
 import './index.css';
+import PageWrapper from './Components/PageWrapper.tsx';
 
 const router = createBrowserRouter([
   {
@@ -18,11 +19,12 @@ const router = createBrowserRouter([
       {
         path: '',
         element: (
-          <>
+          <><PageWrapper>
             <Home />
             <Aboutus />
             <Education />
             <Projects />
+            </PageWrapper>
             
           </>
         )
