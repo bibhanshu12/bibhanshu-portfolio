@@ -25,9 +25,9 @@ const Home = () => {
   // Stats values
   const finalStats = {
     projects: 4,
-    experience: 2,
+    experience: 1,
     technologies: 5,
-    satisfaction: 99.99,
+    satisfaction: 90,
   };
 
   // State for animated numbers

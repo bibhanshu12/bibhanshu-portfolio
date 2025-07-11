@@ -9,7 +9,7 @@ export default function Aboutus() {
           {/* Introduction */}
           <div className="space-y-8">
             <p className="text-lg leading-relaxed">
-            I’m a driven and detail-oriented developer with 2 years of personal hands-on experience using MERN stack. I’ve independently built 3–4 full-scale projects, which helped me strengthen my skills in solving real-world problems through practical and scalable solutions. I'm always exploring new technologies and looking to contribute to forward-thinking teams working on impactful products.
+            I’m a driven and detail-oriented developer with 1+ years of personal hands-on experience using MERN stack. I’ve independently built 3–4 full-scale projects, which helped me strengthen my skills in solving real-world problems through practical and scalable solutions. I'm always exploring new technologies and looking to contribute to forward-thinking teams working on impactful products.
             </p>
           </div>
         </div>
