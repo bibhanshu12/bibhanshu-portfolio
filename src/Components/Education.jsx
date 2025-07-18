@@ -22,7 +22,7 @@ const Education = () => {
 
             <ul className="list-disc pl-5 mt-2 space-y-1 text-gray-200 text-sm">
               <li>Specialization in Cloud Technology & Mobile Applications</li>
-              <li>SGPA: 8.57 / 10.0</li>
+              <li>SGPA: 8.70 / 10.0</li>
               <li>Ranked 1st in CTRL + Z (INR 5000)</li>
             </ul>
           </div>
