@@ -68,7 +68,7 @@ const Projects = () => {
                     <span className="text-3xl font-bold pl-4 text-blue-400">Projects</span>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 p-10 sm:grid-cols-2 xl:grid-cols-2 gap-6">
                     {projects.map((project, index) => {
                         const words = project.description.split(" ");
                         const shortDescription = words.slice(0, 8).join(" ") + (words.length > 8 ? "..." : "");
